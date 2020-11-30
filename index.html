@@ -55,18 +55,35 @@
                                             {{description}}
                                         </p>
                                         <button type="button" class="btn btn-primary read">Read More</button>
-
                                     </div>
                                 </div>
-
                             </div>
-
                         </div>
                     </div>
-
                 </div>
+            </section>
 
-
+            <!-- ONLINE MARKETING SECTION -->
+            <section id="marketing">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-4 one"  v-for="market in marketings">
+                            <div class="">
+                                <img :src="market.photo_path" alt="">
+                            </div>
+                            <div class="right-marketing">
+                                <h3>{{market.title}}</h3>
+                                <p>{{market.desc}}</p>
+                                <ul>
+                                    <li v-for="item in market.selection">
+                                        <i class="fas fa-check"></i>
+                                        {{item}}
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
 

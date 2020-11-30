@@ -55,7 +55,7 @@ header li {
 }
 
 .right-menu button {
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .right-menu a, .left-menu a {
@@ -85,7 +85,19 @@ header li {
     background-image: url("img/27-1.png");
     background-repeat: no-repeat;
     background-position: right;
+    position: relative;
+}
+
+#jumbotron::after {
+    content: '';
     background-color: #F2F7FF;
+    height: 80%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 .description {
@@ -94,6 +106,7 @@ header li {
 
 .description p {
     margin-top: 10px;
+    color: #8E989F;
 }
 
 h1 {
@@ -103,4 +116,34 @@ h1 {
 .read {
     padding: 15px 20px;
     margin-top: 30px;
+}
+
+/* ONLINE MARKETING SECTION */
+
+#marketing {
+    display: flex;
+}
+
+.one {
+    display: flex;
+}
+
+.left-marketing {
+    padding: 10px;
+}
+
+.right-marketing {
+    padding: 10px 0;
+}
+
+.right-marketing li {
+    margin-top: 10px;
+}
+
+.fa-check {
+    color: #377DFF;
+}
+
+.right-marketing p {
+    color: #8E989F;
 }
