@@ -50,6 +50,40 @@ var app = new Vue({
                 description: 'It is a long established fact that a reader wil be distracted by the readable content of a page when looking at its layout',
                 photo_path:'511'
             },
+        ],
+        features: [
+            {
+                name: 'Customized Invoices',
+                icon: 'fas fa-chart-line'
+            },
+            {
+                name: 'Stock Management',
+                icon: 'far fa-paper-plane'
+            },
+            {
+                name: 'Receivables & Payables',
+                icon: 'fas fa-user-secret'
+            },
+            {
+                name: 'Manage Buying',
+                icon: 'far fa-thumbs-up'
+            },
+            {
+                name: 'Powerful & Secure',
+                icon: 'fab fa-superpowers'
+            },
+            {
+                name: 'Fastest Return Filing',
+                icon: 'fas fa-user-secret'
+            },
+            {
+                name: 'Monthly Deatiled',
+                icon: 'far fa-edit'
+            },
+            {
+                name: 'Product Management',
+                icon: 'far fa-thumbs-up'
+            }
         ]
     },
 });

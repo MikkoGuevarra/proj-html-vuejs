@@ -87,7 +87,7 @@
             </section>
 
             <!-- TIPS AND TRICKS -->
-            <section>
+            <section id="tips">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12 col-md-6">
@@ -101,12 +101,40 @@
                                     <h3>{{tip.title}}</h3>
                                     <p>{{tip.description}}</p>
                                 </div>
+
+
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-6">
                             <img src="img/509.jpeg" alt="">
                         </div>
 
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- FEATURES -->
+            <section id="features">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-8">
+                            <h2>Popular features that your business needs </h2>
+                            <p>Faff about only a quid bowler I don't want no agro bleeding chimney pot burke tosser cras nice one boot fanny.!</p>
+                        </div>
+                        <div class="col-sm-12 col-md-4 feature-btn">
+                            <button type="button" class="btn btn-primary read">Explore More Feature</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-3" v-for="feature in features">
+                            <div class="box">
+                                <h4>{{feature.name}}</h4>
+                                <i class="icons" :class="feature.icon"></i>
+
+                            </div>
+                        </div>
                     </div>
 
                 </div>
