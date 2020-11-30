@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 header {
     height: 10vh;
     padding: 20px;
@@ -27,6 +31,7 @@ ul {
 header li {
     display: inline-block;
     padding: 0 10px;
+    margin-top: 12px;
 }
 
 .right-nav {
@@ -43,7 +48,6 @@ header li {
     display: flex;
     align-items: center;
     margin-right: 40px;
-    margin-top: 10px;
 }
 
 .fas {
@@ -52,4 +56,51 @@ header li {
 
 .right-menu button {
     margin-left: 10px;
+}
+
+.right-menu a, .left-menu a {
+    color: black;
+}
+
+#cart-link {
+    position: relative;
+}
+
+#counter {
+    background-color: #377DFF;
+    color: white;
+    border-radius: 50%;
+    padding: 0 7px;
+    position: absolute;
+    top: -10px;
+    right: -8px;
+    z-index: -1;
+}
+
+
+/* +++++JUMBOTRON+++++ */
+
+#jumbotron {
+    height: 70vh;
+    background-image: url("img/27-1.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #F2F7FF;
+}
+
+.description {
+    padding: 100px 0;
+}
+
+.description p {
+    margin-top: 10px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.read {
+    padding: 15px 20px;
+    margin-top: 30px;
 }
