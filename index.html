@@ -85,6 +85,33 @@
                     </div>
                 </div>
             </section>
+
+            <!-- TIPS AND TRICKS -->
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <h2>Get tips tricks on how to skyrocket your sales</h2>
+                            <p>Faff about only a quid bowler I don't want no agro bleeding chimney pot burke tosser cras nice one boot fanny.!</p>
+                            <div class="abouts" v-for="tip in tips">
+                                <div class="left-about">
+                                    <img :src="'img/' + tip.photo_path + '.png'" alt="">
+                                </div>
+                                <div class="right-about">
+                                    <h3>{{tip.title}}</h3>
+                                    <p>{{tip.description}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <img src="img/509.jpeg" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
         </div>
 
         <script src="main.js" charset="utf-8"></script>

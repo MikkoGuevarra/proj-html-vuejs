@@ -38,6 +38,18 @@ var app = new Vue({
                     'Social management'
                 ]
             }
+        ],
+        tips: [
+            {
+                title: 'Reporting Analysis',
+                description: 'It is a long established fact that a reader wil be distracted by the readable content of a page when looking at its layout',
+                photo_path:'510'
+            },
+            {
+                title: 'Technical SEO audit',
+                description: 'It is a long established fact that a reader wil be distracted by the readable content of a page when looking at its layout',
+                photo_path:'511'
+            },
         ]
     },
 });

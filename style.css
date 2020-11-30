@@ -22,6 +22,14 @@ ul {
     list-style: none;
 }
 
+section {
+    margin-bottom: 50px;
+}
+
+p {
+    color: #8E989F;
+}
+
 /* ++++HEADER+++++ */
 
 #header-logo {
@@ -106,7 +114,6 @@ header li {
 
 .description p {
     margin-top: 10px;
-    color: #8E989F;
 }
 
 h1 {
@@ -146,4 +153,33 @@ h1 {
 
 .right-marketing p {
     color: #8E989F;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.abouts {
+    display: flex;
+}
+
+.left-about {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-about {
+    padding: 20px;
+}
+
+.abouts:hover {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px rgba(142,152,159,0.5);
+}
+
+.abouts:hover h3 {
+    color: #377DFF;
 }
