@@ -4,6 +4,7 @@ var app = new Vue({
         navMenu: ['Home', 'About us', 'Feature', 'Contact US'],
         title: 'The biggest platform for your growth',
         description: 'There are many variations of passages of Lorem Ipsum avalable, but the majority have suffered alteration in some form',
+        cartCounter: 0,
         marketings: [
             {
                 title: 'Online Marketing',
@@ -86,4 +87,9 @@ var app = new Vue({
             }
         ]
     },
+    methods: {
+        increaseCart() {
+            this.cartCounter ++;
+        }
+    }
 });

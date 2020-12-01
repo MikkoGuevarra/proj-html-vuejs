@@ -31,7 +31,7 @@
                                 <a href="#"><i class="fas fa-search"></i></a>
                                 <a href="#" id="cart-link">
                                     <i class="fas fa-shopping-cart"></i>
-                                    <span id="counter">0</span>
+                                    <span id="counter">{{cartCounter}}</span>
                                 </a>
                                 <button type="button" class="btn btn-primary">Get Started</button>
                             </div>
@@ -67,7 +67,7 @@
             <section id="marketing">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-12 col-md-4 one"  v-for="market in marketings">
+                        <div class="col-sm-12 col-md-4 one"  v-for="market in marketings" @click="increaseCart">
                             <div class="">
                                 <img :src="market.photo_path" alt="">
                             </div>
