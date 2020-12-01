@@ -221,7 +221,7 @@ h4 {
 
 /* TESTIMONIALS */
 
-.texttt-box {
+.texti-box {
     width: 100%;
     padding: 40px;
 }
@@ -261,4 +261,13 @@ h4 {
     padding: 10px;
     border-radius: 10px;
     box-shadow: inset 1px 1px 2px 2px rgba(142,152,159,0.5);
+}
+
+#testimonials span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 2px solid black;
+    border-radius: 50%;
+    cursor: pointer;
 }
