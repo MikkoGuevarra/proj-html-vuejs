@@ -268,6 +268,25 @@ h4 {
 
 /* TESTIMONIALS */
 
+#testimonials {
+    background-color: #F2F7FF;
+    position: relative;
+}
+
+#testimonials::before {
+    content: '';
+    background-image: url("img/15.png");
+    position: absolute;
+    top: -10%;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+
+
+}
+
 .texti-box {
     width: 100%;
     padding: 40px;
