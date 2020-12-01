@@ -55,35 +55,43 @@ var app = new Vue({
         features: [
             {
                 name: 'Customized Invoices',
-                icon: 'fas fa-chart-line'
+                icon: 'fas fa-chart-line',
+                color: 'blue'
             },
             {
                 name: 'Stock Management',
-                icon: 'far fa-paper-plane'
+                icon: 'far fa-paper-plane',
+                color: 'red'
             },
             {
                 name: 'Receivables & Payables',
-                icon: 'fas fa-user-secret'
+                icon: 'fas fa-user-secret',
+                color: 'green'
             },
             {
                 name: 'Manage Buying',
-                icon: 'far fa-thumbs-up'
+                icon: 'far fa-thumbs-up',
+                color: 'blue'
             },
             {
                 name: 'Powerful & Secure',
-                icon: 'fab fa-superpowers'
+                icon: 'fab fa-superpowers',
+                color: 'red'
             },
             {
                 name: 'Fastest Return Filing',
-                icon: 'fas fa-user-secret'
+                icon: 'fas fa-user-secret',
+                color: 'green'
             },
             {
                 name: 'Monthly Deatiled',
-                icon: 'far fa-edit'
+                icon: 'far fa-edit',
+                color: 'blue'
             },
             {
                 name: 'Product Management',
-                icon: 'far fa-thumbs-up'
+                icon: 'far fa-thumbs-up',
+                color: 'red'
             }
         ],
         testimonials: [
@@ -98,12 +106,21 @@ var app = new Vue({
                 position: 'Manager Sofbox',
                 photo_path: '27',
                 message: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vero eos et consectetur accsu adip adip.'
+            },
+            {
+                name: 'Mac Znder 2',
+                position: 'Manager Sofbox',
+                photo_path: '25',
+                message: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vero eos et consectetur accsu adip adip.'
             }
         ]
     },
     methods: {
         increaseCart() {
             this.cartCounter ++;
+        },
+        getIndex(index) {
+            console.log(index);
         }
     }
 });

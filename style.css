@@ -195,15 +195,43 @@ h2 {
 }
 
 .box {
-    border: 1px solid #ffff;
+    border: 1px solid transparent;
     margin-top: 20px;
     padding: 30px 10px;
+    position: relative;
+    background-color: #fff;
     border-radius: 10px;
-    box-shadow: 2px 2px 2px rgba(142,152,159,0.5);
+    /* box-shadow: 2px 2px 2px rgba(142,152,159,0.5); */
+}
+
+.box:hover.box::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    width: 30px;
+    height: 30px;
+    border-bottom: 3px dotted #6CDAC1;
+    border-right: 3px dotted #6CDAC1;
+}
+
+.box:hover.box::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    border-bottom: 3px dotted #6CDAC1;
+    border-right: 3px dotted #6CDAC1;
 }
 
 .box:hover {
     background-color: #6CDAC1;
+    color: white;
+}
+
+.box:hover .icons {
     color: white;
 }
 
@@ -216,6 +244,25 @@ h4 {
     font-size: 30px;
 }
 #features {
+    position: relative;
+}
+
+.blue {
+    color: #377DFF;
+}
+
+.green {
+    color: #6CDAC1;
+}
+
+.red {
+    color: #FF796D;
+}
+
+.boxes-container {
+    background-color: #00000006;
+    padding: 20px;
+    border-radius: 10px;
     position: relative;
 }
 
