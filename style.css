@@ -195,9 +195,16 @@ h2 {
 }
 
 .box {
-    border: 1px solid black;
+    border: 1px solid #ffff;
     margin-top: 20px;
     padding: 30px 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(142,152,159,0.5);
+}
+
+.box:hover {
+    background-color: #6CDAC1;
+    color: white;
 }
 
 h4 {
@@ -207,4 +214,51 @@ h4 {
 
 .icons {
     font-size: 30px;
+}
+#features {
+    position: relative;
+}
+
+/* TESTIMONIALS */
+
+.texttt-box {
+    width: 100%;
+    padding: 40px;
+}
+
+.text-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.testi {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.name-position {
+    display: flex;
+    justify-content: space-around;
+}
+
+.founders {
+    text-align: center;
+}
+
+.founders img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+}
+
+.testimonial {
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: inset 1px 1px 2px 2px rgba(142,152,159,0.5);
 }

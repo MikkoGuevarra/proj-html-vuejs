@@ -140,6 +140,37 @@
                 </div>
 
             </section>
+
+            <!-- TESTIMONIALS -->
+            <section id="testimonials">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 offset-md-3 testi">
+                            <h2>Our Testimonials</h2>
+                            <p>If you are planning on developing a product landing app or website, take a look at this beautiful-crafted</p>
+                        </div>
+                        <div class="col-sm-12 col-md-6 texttt-box" v-for="testimonial in testimonials">
+                            <div class="testimonial">
+                                <div class="founders">
+                                    <img :src="'img/' + testimonial.photo_path +'.jpeg'" alt="">
+                                </div>
+                                <div class="text-box">
+                                    <div class="name-position">
+                                        <h5>{{testimonial.name}}</h5>
+                                        <p>&nbsp - {{testimonial.position}}</p>
+                                    </div>
+                                    <p>{{testimonial.message}}</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
         </div>
 
         <script src="main.js" charset="utf-8"></script>

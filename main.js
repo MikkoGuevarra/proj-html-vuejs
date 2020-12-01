@@ -85,6 +85,20 @@ var app = new Vue({
                 name: 'Product Management',
                 icon: 'far fa-thumbs-up'
             }
+        ],
+        testimonials: [
+            {
+                name: 'Julia Aann',
+                position: 'COO Sofbox',
+                photo_path: '26',
+                message: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vero eos et consectetur accsu adip adip.'
+            },
+            {
+                name: 'Mac Znder',
+                position: 'Manager Sofbox',
+                photo_path: '27',
+                message: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vero eos et consectetur accsu adip adip.'
+            }
         ]
     },
     methods: {
