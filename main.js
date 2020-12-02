@@ -163,13 +163,8 @@ var app = new Vue({
             console.log(index);
         },
         scroll() {
-            Vue.nextTick(function(){
-                let wholeBody = document.getElementsByClassName('whole')[0];
-                wholeBody.scrollTop = wholeBody.scrollHeight;
-            })
+            window.scrollTo(0,0);
         },
-    },
-    mounted: function(){
-        this.scroll();
     }
+
 });
