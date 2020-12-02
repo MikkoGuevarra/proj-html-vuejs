@@ -118,18 +118,27 @@ var app = new Vue({
             {
                 image: '19',
                 title: 'Life Lack Meaning',
-                desc: 'It is a long established fact that a reader wil be distracted by the readable.'
+                desc: 'It is a long established fact that a reader wil be distracted by the readable.',
+                date: 'Novermber 28, 2019'
             },
             {
                 image: '18',
                 title: 'Life Lack Meaning',
-                desc: 'It is a long established fact that a reader wil be distracted by the readable.'
+                desc: 'It is a long established fact that a reader wil be distracted by the readable.',
+                date: 'Novermber 28, 2019'
             },
             {
                 image: '17',
                 title: 'Life Lack Meaning',
-                desc: 'It is a long established fact that a reader wil be distracted by the readable.'
+                desc: 'It is a long established fact that a reader wil be distracted by the readable.',
+                date: 'Novermber 28, 2019'
             }
+        ],
+        socialIcons: [
+            'fab fa-facebook-f',
+            'fab fa-twitter',
+            'fab fa-github',
+            'fab fa-instagram'
         ]
     },
     methods: {

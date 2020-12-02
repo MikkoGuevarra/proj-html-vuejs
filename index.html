@@ -187,7 +187,9 @@
                                 <div class="desc">
                                     <h5>{{post.title}}</h5>
                                     <p>{{post.desc}}</p>
-
+                                </div>
+                                <div class="date">
+                                    {{post.date}}
                                 </div>
                             </div>
 
@@ -197,6 +199,61 @@
                 </div>
 
             </section>
+
+            <!-- CONTACTS -->
+            <section id="contacts">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 contact-title">
+                            <h2>Contact with our team</h2>
+                            <p>If you are planning on developing a product landing</p>
+
+                        </div>
+                        <div class="col-sm-12 col-md-6 map">
+                            <img src="img/map.png" alt="">
+                            <div class="current-add">
+                                <h6>Storey Ave</h6>
+                                <p>San Francisco, California 94129</p>
+                            </div>
+                            <div class="zoom">
+                                <div class="zoom-in">
+                                    +  
+                                </div>
+                                <div class="zoom-out">
+                                    -
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <img src="img/35.png" alt="">
+                            <div class="address">
+                                <h6>9840 Shore St. Fond Du Lac, Wi 54935</h6>
+                                <p>0 1223 456 789</p>
+                                <p>mail@sofbox.com</p>
+                            </div>
+                            <div class="icons">
+                                <a href="#"  v-for="icon in socialIcons">
+                                    <i class="icon" :class="icon"></i>
+                                </a>
+                            </div>
+                            <h6>Get in Touch</h6>
+                            <div class="first-row-input">
+                                <input type="text" placeholder="Your Name" class="name">
+                                <input type="email" placeholder="Your Email" class="email">
+                            </div>
+                            <input type="text" placeholder="Your Subject" class="subject">
+                            <textarea name="name" rows="8" cols="80" placeholder="Your Message"></textarea>
+                            <button type="button" class="btn btn-primary read black">Send Message</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+            <hr>
         </div>
 
         <script src="main.js" charset="utf-8"></script>
