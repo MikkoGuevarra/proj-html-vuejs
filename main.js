@@ -139,6 +139,20 @@ var app = new Vue({
             'fab fa-twitter',
             'fab fa-github',
             'fab fa-instagram'
+        ],
+        footer: [
+            {
+                title: 'Menu',
+                submenu: ['About us', 'Theme', 'Features', 'Pricing', 'Blog']
+            },
+            {
+                title: 'About Us',
+                submenu: ['About Sofbox', 'Roadmap', 'How it Work', 'Team', 'News']
+            },
+            {
+                title: 'Quick Links',
+                submenu: ['About us', 'Theme', 'Features', 'Pricing', 'Blog']
+            },
         ]
     },
     methods: {

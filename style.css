@@ -441,21 +441,22 @@ h6 {
 
  textarea {
     margin-top: 10px;
+    max-width: 100%;
  }
 
- .map {
+.map {
     position: relative;
 
- }
+}
 
- .current-add {
-     max-width: 400px;
-     border: 1px solid #0000000D;
-     padding: 10px;
-     position: absolute;
-     top: 10px;
-     left: 30px;
-     background-color: #fff;
+.current-add {
+    max-width: 400px;
+    border: 1px solid #0000000D;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    background-color: #fff;
  }
 
 .zoom {
@@ -476,7 +477,17 @@ h6 {
     border-bottom: 1px solid #0000000D;
 }
 
- .zoom-in, .zoom-out {
-     font-size: 50px;
-     cursor: pointer;
+.zoom-in, .zoom-out {
+    font-size: 50px;
+    cursor: pointer;
+ }
+
+ /* FOOTER */
+
+ footer p {
+    margin-top: 20px;
+ }
+
+ .links {
+     color: #8E989F;
  }

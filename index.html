@@ -207,17 +207,17 @@
                         <div class="col-sm-12 contact-title">
                             <h2>Contact with our team</h2>
                             <p>If you are planning on developing a product landing</p>
-
                         </div>
                         <div class="col-sm-12 col-md-6 map">
                             <img src="img/map.png" alt="">
                             <div class="current-add">
                                 <h6>Storey Ave</h6>
                                 <p>San Francisco, California 94129</p>
+                                <a href="#">Visualizza mappa più grande</a>
                             </div>
                             <div class="zoom">
                                 <div class="zoom-in">
-                                    +  
+                                    +
                                 </div>
                                 <div class="zoom-out">
                                     -
@@ -254,6 +254,30 @@
 
             </section>
             <hr>
+
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12- col-md-3">
+                            <img src="img/35.png" alt="">
+                            <p>It is a long established fact that a reader will be distracted by the readaable content</p>
+                            <p>
+                                copyright @ 2018 <a href="#">Sofbox</a>
+                            </p>
+                        </div>
+                        <div class="col-sm-12 col-md-3 right-foot" v-for="foot in footer">
+                            <h6>{{foot.title}}</h6>
+                            <ul>
+                                <li v-for="item in foot.submenu">
+                                    <a class="links" href="#">{{item}}</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+            </footer>
         </div>
 
         <script src="main.js" charset="utf-8"></script>
