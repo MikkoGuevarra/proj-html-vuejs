@@ -113,6 +113,23 @@ var app = new Vue({
                 photo_path: '25',
                 message: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vero eos et consectetur accsu adip adip.'
             }
+        ],
+        posts: [
+            {
+                image: '19',
+                title: 'Life Lack Meaning',
+                desc: 'It is a long established fact that a reader wil be distracted by the readable.'
+            },
+            {
+                image: '18',
+                title: 'Life Lack Meaning',
+                desc: 'It is a long established fact that a reader wil be distracted by the readable.'
+            },
+            {
+                image: '17',
+                title: 'Life Lack Meaning',
+                desc: 'It is a long established fact that a reader wil be distracted by the readable.'
+            }
         ]
     },
     methods: {

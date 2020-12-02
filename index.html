@@ -181,21 +181,14 @@
                             <h2>Latest Posts</h2>
                             <p>If you are planning on developing a product landing</p>
                         </div>
-                        <div class="col-sm-12 col-md-4">
+                        <div class="col-sm-12 col-md-4" v-for="post in posts">
                             <div class="each-post">
+                                <img :src="'img/' + post.image + '.jpg'" alt="">
+                                <div class="desc">
+                                    <h5>{{post.title}}</h5>
+                                    <p>{{post.desc}}</p>
 
-                            </div>
-
-                        </div>
-                        <div class="col-sm-12 col-md-4">
-                            <div class="each-post">
-
-                            </div>
-
-                        </div>
-                        <div class="col-sm-12 col-md-4">
-                            <div class="each-post">
-
+                                </div>
                             </div>
 
                         </div>
