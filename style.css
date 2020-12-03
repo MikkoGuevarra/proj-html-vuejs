@@ -431,6 +431,44 @@ h4 {
     padding: 10px;
     border-radius: 10px;
     box-shadow: inset 1px 1px 2px 2px rgba(142,152,159,0.5);
+    position: relative;
+    z-index: 1;
+}
+
+.testimonial::after {
+    content: '';
+    display: block;
+    width: 90%;
+    z-index: -1;
+    border-bottom: 1px solid rgb(142,152,159);
+    border-right: 1px solid rgb(142,152,159);
+    border-left: 1px solid rgb(142,152,159);
+    padding: 10px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    height: 2px;
+    border-radius: 10px;
+    transform: translateX(-50%);
+    /* box-shadow: inset 0px 0px 2px 2px rgba(142,152,159,0.5); */
+}
+
+.testimonial::before {
+    content: '';
+    display: block;
+    width: 80%;
+    z-index: 1;
+    border-bottom: 1px solid rgb(142,152,159);
+    border-right: 1px solid rgb(142,152,159);
+    border-left: 1px solid rgb(142,152,159);
+    padding: 10px;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    height: 2px;
+    border-radius: 10px;
+    transform: translateX(-50%);
+    /* box-shadow: inset 0px 0px 2px 2px rgba(142,152,159,0.5); */
 }
 
 #testimonials span {
