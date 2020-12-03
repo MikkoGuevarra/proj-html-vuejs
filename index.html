@@ -283,12 +283,15 @@
                             </p>
                         </div>
                         <div class="col-sm-12 col-md-3 right-foot" v-for="foot in footer">
-                            <h6>{{foot.title}}</h6>
-                            <ul>
-                                <li v-for="item in foot.submenu">
-                                    <a class="links" href="#">{{item}}</a>
-                                </li>
-                            </ul>
+                            <div class="">
+                                <h6>{{foot.title}}</h6>
+                                <ul>
+                                    <li v-for="item in foot.submenu">
+                                        <a class="links" href="#">{{item}}</a>
+                                    </li>
+                                </ul>
+
+                            </div>
                         </div>
 
                     </div>

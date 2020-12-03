@@ -8,11 +8,18 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    position: relative;
 }
 
 header {
     height: 10vh;
     padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #fff;
 }
 
 header .container {
@@ -116,6 +123,7 @@ header li {
     background-repeat: no-repeat;
     background-position: right;
     position: relative;
+    margin-top: 10vh;
 }
 
 #jumbotron::after {
@@ -456,20 +464,23 @@ h6 {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
- }
+}
 
- .first-row-input input {
+.first-row-input input {
     width: 45%;
- }
+}
 
- textarea {
+textarea {
     margin-top: 10px;
     max-width: 100%;
- }
+}
+
+textarea, input {
+    padding: 10px 10px;
+}
 
 .map {
     position: relative;
-    padding-right: 50px;
 }
 
 .current-add {
@@ -518,6 +529,17 @@ h6 {
 
  .links {
      color: #8E989F;
+ }
+
+ .right-foot a {
+     font-size: 14px;
+ }
+
+ .right-foot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
  }
 
  /* ARROW FIXED */

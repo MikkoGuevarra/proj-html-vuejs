@@ -7,6 +7,8 @@ var app = new Vue({
         cartCounter: 0,
         index: 0,
         index2: 1,
+        isHovering: false,
+        class: '.box:hover blue',
         marketings: [
             {
                 title: 'Online Marketing',
@@ -187,7 +189,7 @@ var app = new Vue({
         },
         scroll() {
             window.scrollTo(0,0);
-        },
+        }
     }
 
 });
