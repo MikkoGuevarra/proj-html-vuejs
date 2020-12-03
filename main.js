@@ -164,25 +164,28 @@ var app = new Vue({
             this.cartCounter ++;
         },
         nxtIndex() {
-            this.index += 1;
+            this.index += 1; //al click questo indice aumentadi 1
             if (this.index >= this.testimonials.length) {
+                //se questo indice è maggiore o uguale alla lunghezza dell'array l'indice viene azzerato
                 this.index = 0;
 
             }
-            this.index2 += 1;
+            this.index2 += 1; //
             if (this.index2 >= this.testimonials.length) {
+                //se questo indice è minore o uguale alla lunghezza torna da 0
                 this.index2 = 1;
 
             }
         },
         prevIndex() {
-            this.index -= 1;
-            if (this.index >= this.testimonials.length) {
+            this.index -= 1; //al click l'indice viene diminuito
+            if (this.index < 0) {
+                //se questo indice è minore di 0 diventa cmq zero
                 this.index = 0;
 
             }
             this.index2 -= 1;
-            if (this.index2 >= this.testimonials.length) {
+            if (this.index2 < 0) {
                 this.index2 = 1;
 
             }

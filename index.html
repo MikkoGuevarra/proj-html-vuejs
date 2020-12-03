@@ -22,7 +22,7 @@
                         <div class="col-sm-12 col-md-9 right-nav">
                             <div class="left-menu">
                                 <ul>
-                                    <li class="menu" v-for="menu in navMenu">
+                                    <li class="menu un" v-for="menu in navMenu">
                                         <a href="#">{{menu}}</a>
                                     </li>
                                 </ul>
@@ -129,7 +129,7 @@
                     </div>
                     <div class="row boxes-container">
                         <div class="col-sm-12 col-md-3" v-for="feature in features">
-                            <div class="box">
+                            <div class="box" :id="feature.color">
                                 <h4>{{feature.name}}</h4>
                                 <i class="icons" :class="[feature.icon, feature.color]" ></i>
                             </div>
