@@ -22,7 +22,7 @@
                         <div class="col-sm-12 col-md-9 right-nav">
                             <div class="left-menu">
                                 <ul>
-                                    <li v-for="menu in navMenu">
+                                    <li class="menu" v-for="menu in navMenu">
                                         <a href="#">{{menu}}</a>
                                     </li>
                                 </ul>
@@ -233,7 +233,7 @@
                                 <p>0 1223 456 789</p>
                                 <p>mail@sofbox.com</p>
                             </div>
-                            <div class="icons">
+                            <div class="social-icons">
                                 <a href="#"  v-for="icon in socialIcons">
                                     <i class="icon" :class="icon"></i>
                                 </a>
