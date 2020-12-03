@@ -148,23 +148,39 @@
                             <h2>Our Testimonials</h2>
                             <p>If you are planning on developing a product landing app or website, take a look at this beautiful-crafted</p>
                         </div>
-                        <div class="col-sm-12 col-md-6 texti-box" v-for="(testimonial, index) in testimonials" @click="getIndex(index)" v-if="index < 2">
+                        <div class="col-sm-12 col-md-6 texti-box" v-if="index < 2">
                             <div class="testimonial">
                                 <div class="founders">
-                                    <img :src="'img/' + testimonial.photo_path +'.jpeg'" alt="">
+                                    <img :src="'img/' + testimonials[index].photo_path +'.jpeg'" alt="">
                                 </div>
                                 <div class="text-box">
                                     <div class="name-position">
-                                        <h5>{{testimonial.name}}</h5>
-                                        <p>&nbsp - {{testimonial.position}}</p>
+                                        <h5>{{testimonials[index].name}}</h5>
+                                        <p>&nbsp - {{testimonials[index].position}}</p>
                                     </div>
-                                    <p>{{testimonial.message}}</p>
+                                    <p>{{testimonials[index].message}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 texti-box" v-if="index < 2">
+                            <div class="testimonial">
+                                <div class="founders">
+                                    <img :src="'img/' + testimonials[index2].photo_path +'.jpeg'" alt="">
+                                </div>
+                                <div class="text-box">
+                                    <div class="name-position">
+                                        <h5>{{testimonials[index2].name}}</h5>
+                                        <p>&nbsp - {{testimonials[index2].position}}</p>
+                                    </div>
+                                    <p>{{testimonials[index2].message}}</p>
                                 </div>
                             </div>
                         </div>
                         <div class="dots">
-                            <span class="dot"></span>
-                            <span class="dot"></span>
+                            <span class="dot" @click="prevIndex"
+                            :class="index == 0 ? 'active' : null"></span>
+                            <span class="dot" @click="nxtIndex"
+                            :class="index > 0 ? 'active' : null"></span>
                         </div>
 
                     </div>

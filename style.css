@@ -371,6 +371,11 @@ h4 {
     transform: translateX(-50%);
 }
 
+.dot.active {
+    background-color: black;
+    pointer-events: none;
+}
+
 /* LATEST POSTS */
 
 .post-title {

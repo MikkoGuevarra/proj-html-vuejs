@@ -5,6 +5,8 @@ var app = new Vue({
         title: 'The biggest platform for your growth',
         description: 'There are many variations of passages of Lorem Ipsum avalable, but the majority have suffered alteration in some form',
         cartCounter: 0,
+        index: 0,
+        index2: 1,
         marketings: [
             {
                 title: 'Online Marketing',
@@ -159,8 +161,29 @@ var app = new Vue({
         increaseCart() {
             this.cartCounter ++;
         },
-        getIndex(index) {
-            console.log(index);
+        nxtIndex() {
+            this.index += 1;
+            if (this.index >= this.testimonials.length) {
+                this.index = 0;
+
+            }
+            this.index2 += 1;
+            if (this.index2 >= this.testimonials.length) {
+                this.index2 = 1;
+
+            }
+        },
+        prevIndex() {
+            this.index -= 1;
+            if (this.index >= this.testimonials.length) {
+                this.index = 0;
+
+            }
+            this.index2 -= 1;
+            if (this.index2 >= this.testimonials.length) {
+                this.index2 = 1;
+
+            }
         },
         scroll() {
             window.scrollTo(0,0);
