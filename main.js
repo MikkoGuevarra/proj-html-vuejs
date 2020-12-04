@@ -7,8 +7,6 @@ var app = new Vue({
         cartCounter: 0,
         index: 0,
         index2: 1,
-        isHovering: false,
-        class: '.box:hover blue',
         marketings: [
             {
                 title: 'Online Marketing',
@@ -123,19 +121,19 @@ var app = new Vue({
                 image: '19',
                 title: 'Life Lack Meaning',
                 desc: 'It is a long established fact that a reader wil be distracted by the readable.',
-                date: 'Novermber 28, 2019'
+                date: 'November 28, 2019'
             },
             {
                 image: '18',
                 title: 'Life Lack Meaning',
                 desc: 'It is a long established fact that a reader wil be distracted by the readable.',
-                date: 'Novermber 28, 2019'
+                date: 'November 28, 2019'
             },
             {
                 image: '17',
                 title: 'Life Lack Meaning',
                 desc: 'It is a long established fact that a reader wil be distracted by the readable.',
-                date: 'Novermber 28, 2019'
+                date: 'November 28, 2019'
             }
         ],
         socialIcons: [
@@ -164,29 +162,29 @@ var app = new Vue({
             this.cartCounter ++;
         },
         nxtIndex() {
-            this.index += 1; //al click questo indice aumentadi 1
+            this.index += 1; //al click questo indice aumenta di 1
             if (this.index >= this.testimonials.length) {
-                //se questo indice è maggiore o uguale alla lunghezza dell'array l'indice viene azzerato
+                //se index è maggiore o uguale alla lunghezza dell'array l'indice ritorna alla pos 0, quella di partenza
                 this.index = 0;
 
             }
             this.index2 += 1; //
             if (this.index2 >= this.testimonials.length) {
-                //se questo indice è minore o uguale alla lunghezza torna da 0
-                this.index2 = 1;
+                //se questo indice è maggiore o uguale alla lunghezza torna da 0
+                this.index2 = 0;
 
             }
         },
         prevIndex() {
             this.index -= 1; //al click l'indice viene diminuito
             if (this.index < 0) {
-                //se questo indice è minore di 0 diventa cmq zero
-                this.index = 0;
+                //se questo indice è minore di 0 prende la lunghezza array e fa -1 per prendere l'ultima pos
+                this.index = this.testimonials.length -1;
 
             }
             this.index2 -= 1;
             if (this.index2 < 0) {
-                this.index2 = 1;
+                this.index2 = this.testimonials.length -1;
 
             }
         },
